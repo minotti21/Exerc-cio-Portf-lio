@@ -41,10 +41,9 @@ header {
   }
 
 .me {
-    position: relative;
-    top: 180px;
     color: white;
     text-align: center;
+    padding-top: 160px;
 }
 
 .me h1 {
@@ -78,8 +77,7 @@ header {
 }
 
 header a {
-    position: absolute;
-    bottom: 30px;
+    margin-top: 130px;
 }
 
 .arrow {
@@ -103,9 +101,8 @@ nav {
 
 .logo {
     color: white;
+    margin-left: 160px;
     font-size: 20px;
-    margin-left: 100px;
-    text-align: center;
     font-family: 'Merriweather', serif;
     letter-spacing: 5px;
     transition: 0.6s;
@@ -121,8 +118,7 @@ nav {
 
 .navbar {
     display: flex;
-    justify-content: space-around;
-    width: 50%;
+    width: 751px;
     list-style: none;
 }
 
@@ -132,6 +128,7 @@ nav a {
 
 .navbar li {
     color: white;
+    margin-right: 90px;
     font-size: 24px;
     letter-spacing: 3px;
     font-weight: bold;
@@ -146,6 +143,7 @@ aside {
     position: fixed;
     left: 50px;
     top: 154px;
+    z-index: 10;
 }
 
 aside a div {
@@ -167,16 +165,16 @@ aside a div img {
     padding-top: 80px;
     display: grid;
     grid-template-columns: 1.3fr 1fr;
-    justify-items: center;
+    grid-column-gap: 160px;
 }
 
 .about-text {
-    margin: 0 160px;
+    margin-left: 160px;
 }
 
 .about-text p {
     font-size: 28px;
-    margin: 60px 0;
+    margin: 80px 0;
 }
 
 .about-text h1 {
@@ -400,4 +398,281 @@ footer hr {
 
 .developed-by a:hover {
     text-decoration: underline;
+}
+
+/* Responsividade para Notebooks */
+
+@media only screen and (max-width: 1366px) {
+
+    .me {
+        padding-top: 80px;
+    }
+
+    header a {
+        margin-top: 60px;
+    }
+
+    aside {
+        left: 30px;
+        top: 112px;
+    }
+
+    aside a div {
+        height: 40px;
+        width: 40px;
+        border-radius: 10px;
+    }
+
+    aside a div img {
+        width: 34px;
+    }
+
+    .logo {
+        margin-left: 100px;
+    }
+
+    .navbar {
+        width: 554px;
+    }
+
+    .navbar li {
+        margin-right: 45px;
+    }
+
+    .about {
+        grid-column-gap: 60px;
+        padding-top: 40px ;
+    }
+
+    .about-text h1 {
+        font-size: 50px;
+    }
+
+    .about-text p {
+        font-size: 24px;
+        margin: 40px 0;
+    }
+
+    .about-text {
+        margin: 0 100px;
+    }
+
+    .tec-text {
+        margin-right: 100px;
+    }
+
+    .tecnologias h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .tecnologias img {
+        width: 80px;
+    }
+    
+    .tecnologias h2 {
+        font-size: 30px;
+    }
+
+    .projects-container {
+        margin: 0 100px;
+        padding-top: 140px;
+    }
+
+    .projects-container h1 {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .projects-grid {
+        grid-gap: 20px 50px;
+    }
+
+    .projects-grid div h2 {
+        margin: 25px 0;
+    }
+
+    .contact-container {
+        padding-top: 140px;
+        margin: 0 100px;
+    }
+
+    .contact-container h1 {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .contact-container label {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .contact-container textarea {
+        height: 140px;
+    }
+
+    .footer-container {
+        margin: 0 180px;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-column-gap: 200px;
+        margin-bottom: 80px;
+    }
+
+    .about-flex p {
+        font-size: 18px;
+        line-height: 20px;
+        margin-left: 30px;
+    }
+
+    footer hr {
+        margin: 0 100px;
+    }
+
+}
+
+/* Responsividade para Celulares */
+
+@media only screen and (max-width: 768px) {
+
+    .me {
+        padding-top: 100px;
+    }
+
+    .me h1 {
+        font-size: 32px;
+    }
+
+    .me h2 {
+        font-size: 16px;
+    }
+
+    .me img {
+        width: 250px;
+    }
+
+    header a {
+        margin-top: 100px;
+    }
+
+    aside {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .about {
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 50px;
+    }
+
+    .about-text {
+        margin: 0
+    }
+    
+    .about-text h1 {
+        margin: 20px 0;
+    }
+
+    .tecnologias h1 {
+        margin: 30px 0;
+    }
+
+    .tecnologias h2 {
+        text-align: center;
+        margin: 0;
+    }
+
+    .tec-text img {
+        width: 120px;
+    }
+
+    .tec-text {
+        margin: 20px 0 30px 0;
+        margin-right: 0;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .tec-text p {
+        margin: 0 0 20px 0;
+        text-align: start;
+    }
+
+    .projects-container {
+        padding-top: 0;
+        margin: 0 50px;
+    }
+
+    .projects-container h1 {
+        margin: 20px 0;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 0;
+    }
+
+    .site {
+        grid-column: 1/2;
+    }
+
+    .projects-text {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .projects-grid div {
+        margin: 8px 0;
+    }
+
+    .projects-text img {
+        width: 150px;
+        margin: 15px 0;
+    }
+
+    .projects-text p {
+        text-align: start;
+        margin: 0;
+    }
+
+    .contact-container {
+        padding-top: 60px;
+        margin: 0 50px;
+    }
+
+    footer hr {
+        margin: 0 50px;
+    }
+
+    .footer-container {
+        margin: 0 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 0;
+        margin-bottom: 100px;
+    }
+
+    .about-flex {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .about-flex img {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .about-flex p {
+        text-align: start;
+        margin: 0;
+    }
+    
 }
