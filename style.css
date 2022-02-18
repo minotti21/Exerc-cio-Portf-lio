@@ -22,6 +22,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
 }
 
 ::-webkit-scrollbar {
@@ -38,7 +42,7 @@ header {
   
   ::-webkit-scrollbar-thumb:hover {
     background: #000000; 
-  }
+}
 
 .me {
     color: white;
@@ -97,11 +101,18 @@ nav {
     align-items: center;
     position: sticky;
     top: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+nav > a {
+    margin-left: 160px;
 }
 
 .logo {
     color: white;
-    margin-left: 160px;
     font-size: 20px;
     font-family: 'Merriweather', serif;
     letter-spacing: 5px;
@@ -126,9 +137,12 @@ nav a {
     text-decoration: none;
 }
 
+.navbar a {
+    margin-right: 90px;
+}
+
 .navbar li {
     color: white;
-    margin-right: 90px;
     font-size: 24px;
     letter-spacing: 3px;
     font-weight: bold;
@@ -141,9 +155,11 @@ nav a {
 
 aside {
     position: fixed;
-    left: 50px;
+    left: -50px;
+    opacity: 0;
     top: 154px;
     z-index: 10;
+    transition: 0.6s;
 }
 
 aside a div {
@@ -162,6 +178,7 @@ aside a div img {
 }
 
 .about {
+    width: 100%;
     padding-top: 80px;
     display: grid;
     grid-template-columns: 1.3fr 1fr;
@@ -427,7 +444,7 @@ footer hr {
         width: 34px;
     }
 
-    .logo {
+    nav > a {
         margin-left: 100px;
     }
 
@@ -435,7 +452,7 @@ footer hr {
         width: 554px;
     }
 
-    .navbar li {
+    .navbar a {
         margin-right: 45px;
     }
 
