@@ -178,7 +178,6 @@ aside a div img {
 }
 
 .about {
-    width: 100%;
     padding-top: 80px;
     display: grid;
     grid-template-columns: 1.3fr 1fr;
