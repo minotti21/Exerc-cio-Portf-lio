@@ -1,3 +1,16 @@
-Exercício final do módulo de HTML e CSS do curso de Desenvolvimento Web Full Stack da Let's Code
 
-![alt text](https://i.imgur.com/hL6NEnc.png)
+# Exercício Let's Code
+
+Exercício final do módulo de HTML e CSS do curso de desenvolvimento Web Full Stack da Let's Code
+
+## Stack utilizada
+
+HTML, CSS e Javascript
+
+## Demonstração
+
+![site](https://i.imgur.com/hL6NEnc.png)
+
+## Link para o projeto
+
+https://minotti21.github.io/exercicio-portfolio/
