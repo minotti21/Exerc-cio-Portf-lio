@@ -9,7 +9,7 @@ HTML, CSS e Javascript
 
 ## Demonstração
 
-![site](https://i.imgur.com/hL6NEnc.png)
+![site](https://i.imgur.com/La01m7r.png)
 
 ## Link para o projeto
 
